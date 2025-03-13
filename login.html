@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Black Heist Gym</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Login Container Styles */
+        .login-container {
+            background: white;
+            padding: 60px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        /* Login Header Styles */
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #E52020;
+        }
+
+        /* Input Group Styles */
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        /* Input Label Styles */
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* Input Field Styles */
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Button Styles */
+        .btn {
+            background-color: #E52020;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Button Hover Styles */
+        .btn:hover {
+            background-color: #c21818;
+        }
+
+        /* Register Link Styles */
+        .register-link {
+            margin-top: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>LOGIN</h2>
+        <form action="home.html" method="POST">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <a href="home.html" class="register-link"></a>
+    </div>
+</body>
+</html>
